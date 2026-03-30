@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="light-theme">
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-outline"></div>
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="container">
+
+            <nav>
+                <ul>
+                    <li><a href="#hero" class="active">Branding</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Experience</a></li>
+                    <li><a href="#achievements">Certifications</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <nav>
+            <div class="logo">
+                <span class="bracket">&lt;</span>My<span class="accent">Portfolio</span><span class="bracket">
+                    /&gt;</span>
+            </div>
+            <div class="nav-links">
+                <a href="#hero" class="active">Branding</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Work</a>
+                <a href="#achievements">Achievements</a>
+            </div>
+        </nav>
+
+        <section id="hero" class="hero-section">
+            <div class="hero-background">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+                <div class="blob blob-3"></div>
+                <div class="grid-overlay"></div>
+            </div>
+            <div class="container hero-content">
+                <div class="branding-box">
+                    <div class="hero-main-layout">
+                        <div class="image-wrapper">
+                            <img src="assets/profile.jpg" alt="Via Vinus B. Umali" class="profile-img">
+                            <div class="image-glow"></div>
+                        </div>
+                        <div class="hero-text-content">
+                            <h1 class="hero-name">Via Vinus B. Umali</h1>
+                            <div class="aesthetic-badge">
+                                <i class="fas fa-code"></i>
+                                <span>Backend Developer</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>viaumali24@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+63 992 522 8674</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/ViaVinus" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/feed/" target="_blank" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:viaumali24@gmail.com" title="Email Me">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#" class="btn btn-secondary">Download Resume <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="code-window floating-code">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="file-name">server.php</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="keyword">class</span> <span class="class">Portfolio</span> {
+    <span class="keyword">public</span> <span class="keyword">function</span> <span class="func">getSkills</span>() {
+        <span class="keyword">return</span> [<span class="str">'PHP'</span>, <span class="str">'MySQL'</span>];
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <!-- Section 2: Skills & Toolkit -->
+        <section id="skills" class="skills-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Toolkit</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-php"></i>
+                        <h3>PHP</h3>
+                        <p>Server-side logic and backend development.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h3>MySQL</h3>
+                        <p>Database management and data persistence.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-code"></i>
+                        <h3>HTML, CSS & JS</h3>
+                        <p>Responsive web design and basic interactivity.</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-toolbox"></i>
+                        <h3>Development Tools</h3>
+                        <p>VS Code, GitHub, Hostinger and XAMPP.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Project Experience -->
+        <section id="projects" class="projects-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Experience</span>
+                    <h2 class="section-title">Latest Work</h2>
+                </div>
+                <div class="project-featured">
+                    <div class="project-visual">
+                        <img src="assets/visual.png" alt="MarkeTrack Project Visual" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3>Development of MarkeTrack: An Inventory Management System with Demand Forecasting and
+                            Analytics</h3>
+                        <p class="project-date">January 2026</p>
+                        <p class="role-badge">Backend Developer</p>
+                        <p class="project-description">
+                            MarkeTrack is a web-based Inventory Management System. Its core feature goes beyond simple
+                            stock tracking; it integrates Demand Forecasting and Analytics to help businesses make
+                            data-driven decisions.
+                        </p>
+                        <div class="project-links">
+                            <span class="stack-item">PHP</span>
+                            <span class="stack-item">HTML, CSS & JS</span>
+                            <span class="stack-item">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Achievements & Certifications -->
+        <section id="achievements" class="achievements-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Wins</span>
+                    <h2 class="section-title">Certifications & Growth</h2>
+                </div>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="cert-img-container">
+                            <img src="assets/HTML Essentials.png" alt="HTML Essentials Certification" class="cert-img">
+                        </div>
+                        <div class="cert-info">
+                            <h4>HTML Essentials</h4>
+                            <p>Cisco Network Academy</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="cert-img-container">
+                            <img src="assets/COC.png" alt="COC Certification" class="cert-img">
+                        </div>
+                        <div class="cert-info">
+                            <h4>NCII - Computer Systems Servicing</h4>
+                            <p>TESDA Certified (COC)</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="cert-img-container">
+                            <img src="assets/Lean Six Sigma.png" alt="Lean Six Sigma Certification" class="cert-img">
+                        </div>
+                        <div class="cert-info">
+                            <h4>Lean Six Sigma White Belt</h4>
+                            <p>Management Strategy Institute</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
