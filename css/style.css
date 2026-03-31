@@ -51,16 +51,8 @@ body::before {
 }
 
 .navbar {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.8);
-    border-bottom: 1px solid var(--glass-border);
+    display: none;
+    /* Hide the legacy navbar to prefer the floating nav */
 }
 
 .navbar .container {
@@ -1110,14 +1102,151 @@ nav {
 
 @media (max-width: 968px) {
     .project-featured {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .project-visual {
         height: 300px;
+        border-right: none;
+        border-bottom: 1px solid var(--glass-border);
     }
 
     .section-title {
         font-size: 2.2rem;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+
+    .hero-main-layout {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .contact-card {
+        margin: 0 auto 3rem;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+    }
+
+    .project-content {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        cursor: default;
+    }
+
+    .custom-cursor,
+    .custom-cursor-outline {
+        display: none;
+    }
+
+    nav {
+        width: 95%;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        font-size: 0.7rem;
+    }
+
+    .hero-section {
+        padding: 120px 0 60px;
+    }
+
+    h1.hero-name {
+        font-size: 2.8rem;
+    }
+
+    .section-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .skill-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1.2rem;
+    }
+
+    nav {
+        padding: 0.6rem 1rem;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .nav-links {
+        gap: 0.8rem;
+    }
+
+    .nav-links a {
+        font-size: 0.65rem;
+    }
+
+    h1.hero-name {
+        font-size: 2.2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .skill-card i {
+        font-size: 2.5rem;
+    }
+
+    .project-content {
+        padding: 1.5rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cert-img-container {
+        height: 150px;
+    }
+
+    .footer-links-list {
+        gap: 1rem;
     }
 }
